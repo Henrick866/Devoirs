@@ -1,4 +1,5 @@
-﻿  Travail.cpp
-c:\users\utilisateur\desktop\uqac\secuweb - h18\travail\travail\travail.cpp(21): warning C4018: '<' : incompatibilité signed/unsigned
-c:\users\utilisateur\desktop\uqac\secuweb - h18\travail\travail\travail.cpp(27): warning C4018: '<' : incompatibilité signed/unsigned
-  Travail.vcxproj -> C:\Users\Utilisateur\Desktop\Uqac\SecuWeb - H18\Travail\Debug\Travail.exe
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(387,5): warning MSB8028: Le répertoire intermédiaire (Debug\) contient des fichiers partagés provenant d'un autre projet (Travail.vcxproj). Cela peut entraîner un comportement de nettoyage et de régénération incorrect.
+  main.cpp
+c:\users\utilisateur\desktop\uqac\devoir1\rc4\travail\main.cpp(28): warning C4018: '<' : incompatibilité signed/unsigned
+c:\users\utilisateur\desktop\uqac\devoir1\rc4\travail\main.cpp(35): warning C4018: '<' : incompatibilité signed/unsigned
+  Travail.vcxproj -> C:\Users\Utilisateur\Desktop\Uqac\Devoir1\RC4\Debug\RC4.exe

@@ -1,8 +1,9 @@
 #include "stdafx.h"
 #include <cstddef>
 #include <string>
+#include <vector>
 #include "RC4.h"
-
+using namespace std;
 
 RC4::RC4(char * Message)
 {
@@ -17,7 +18,7 @@ RC4::~RC4()
 {
 }
 
-void RC4::GenererClef(unsigned char *Key, unsigned int Key_Length) {
+void RC4::GenererClef(vector<unsigned char> Key, unsigned int Key_Length) {
 	for (i = 0; i < 256; i++) {
 		S[i] = i;
 	}

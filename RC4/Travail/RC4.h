@@ -1,4 +1,6 @@
 #pragma once
+#include <vector>
+using namespace std;
 class RC4
 {
 private:
@@ -13,7 +15,7 @@ private:
 public:
 	RC4(char * Message);
 	~RC4();
-	void GenererClef(unsigned char *Key, unsigned int Key_Length);
+	void GenererClef(vector<unsigned char> Key, unsigned int Key_Length);
 	char* Encrypt();
 	char* Decrypt();
 };
