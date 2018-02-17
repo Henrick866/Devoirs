@@ -1,0 +1,13 @@
+﻿  Winsocket.cpp
+c:\users\utilisateur\desktop\feistel_v7\serveur\winsocket.cpp(365): warning C4018: '<' : incompatibilité signed/unsigned
+c:\users\utilisateur\desktop\feistel_v7\serveur\winsocket.cpp(374): warning C4018: '<' : incompatibilité signed/unsigned
+c:\users\utilisateur\desktop\feistel_v7\serveur\winsocket.cpp(396): warning C4018: '<' : incompatibilité signed/unsigned
+c:\users\utilisateur\desktop\feistel_v7\serveur\winsocket.cpp(414): warning C4018: '<' : incompatibilité signed/unsigned
+c:\users\utilisateur\desktop\feistel_v7\serveur\winsocket.cpp(580): warning C4018: '<' : incompatibilité signed/unsigned
+c:\users\utilisateur\desktop\feistel_v7\serveur\winsocket.cpp(585): warning C4018: '<' : incompatibilité signed/unsigned
+c:\users\utilisateur\desktop\feistel_v7\serveur\winsocket.cpp(597): warning C4018: '<' : incompatibilité signed/unsigned
+c:\users\utilisateur\desktop\feistel_v7\serveur\winsocket.cpp(616): warning C4018: '<' : incompatibilité signed/unsigned
+c:\users\utilisateur\desktop\feistel_v7\serveur\winsocket.cpp(630): warning C4018: '<' : incompatibilité signed/unsigned
+  Serveur.cpp
+  Génération de code en cours...
+  Serveur.vcxproj -> C:\Users\Utilisateur\Desktop\Feistel_V7\Serveur\Debug\Serveur.exe
