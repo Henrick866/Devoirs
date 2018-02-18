@@ -22,7 +22,7 @@ Winsocket::Winsocket(int type)
 	{
 		TypeSocket = 2;
 		cout << "Enter Pc name of Server" << endl;
-		cin >> PC_Name;
+		cin.getline(PC_Name, 100);
 		nPort = PORT;
 		nRet = WSAStartup(wVersionRequested, &wsaData);
 
