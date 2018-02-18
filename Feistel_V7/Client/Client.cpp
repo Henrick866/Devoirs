@@ -19,6 +19,7 @@ int main()
 
 void client()
 {
+	//Paramètrer la console pour correctement afficher les é, à, ù, etc.
 	SetConsoleOutputCP(1252);
 	SetConsoleCP(1252);
 
