@@ -33,9 +33,9 @@ void client()
 	
 	while (true)
 	{
-		if (!user.ReceiveLoop())
-			break;
 		if (!user.SendLoop())
+			break;
+		if (!user.ReceiveLoop())
 			break;
 	}
 

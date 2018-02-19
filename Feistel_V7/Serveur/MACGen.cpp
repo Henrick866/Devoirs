@@ -12,19 +12,26 @@ MACGen::~MACGen()
 
 int MACGen::GetCodeForMessage_Int(string message)
 {
-	if (message.length() < 64)
+	// On s'assure que le message est un multiple de 64 bit (long long)
+	if (message.length() % 8 != 0)
 	{
-		message.append(' ', 64 - message.length());
+		int missingCharacters = 8 - (message.length() % 8);
+		message.append(missingCharacters, ' ');
 	}
 
-	long long lastBlock = 0;
-
-	for (size_t i = 0; i < 8; i++)
+	//On chiffre chaque block avec le XOR du chiffrement du block précédent. Voir algo CMAC
+	long long _lastBlock = 0;
+	for (size_t i = 0; i < message.length(); i += 8)
 	{
-		lastBlock |= ((long long)message[message.length() - 1 - i]) << 8 * i;
+		long long block = 0;
+		for (size_t u = 0; u < 8; u++)
+		{
+			block |= ((long long)message[i + u]) << 8 * (7 - u);
+		}
+		_lastBlock = des->EncodeBlock(_lastBlock ^ block);
 	}
 
-	return des->EncodeBlock(lastBlock);
+	return (int)_lastBlock;
 }
 
 string MACGen::GetCodeForMessage_Str(string message)

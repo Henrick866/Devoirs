@@ -18,7 +18,7 @@ int main()
 
 void serveur()
 {
-	//Paramètrer la console pour correctement afficher les é, à, ù, etc.
+	//Paramï¿½trer la console pour correctement afficher les ï¿½, ï¿½, ï¿½, etc.
 	SetConsoleOutputCP(1252);
 	SetConsoleCP(1252);
 
@@ -34,9 +34,9 @@ void serveur()
 
 	while (true)
 	{
-		if (!user.SendLoop())
-			break;
 		if (!user.ReceiveLoop())
+			break;
+		if (!user.SendLoop())
 			break;
 	}
 	Serveur1->CloseSocket();
